@@ -3,7 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Merkle Tree</title>
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #address-input {
+        width: 300px;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+
+      #check-button {
+        background-color: aquamarine;
+        outline: none;
+        height: 40px;
+        width: 150px;
+      }
+
+      #root-hash {
+        color: green;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -13,8 +45,7 @@
       <input type="text" id="address-input" placeholder="Enter your address" />
       <button id="check-button">Check Eligibility</button>
 
-      <p>Merkle Root Hash: <span id="root-hash"></span></p>
-      <p id="result"></p>
+      <p class="root-hash">Merkle Root Hash: <span id="root-hash"></span></p>
     </div>
 
     <script

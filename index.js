@@ -27,8 +27,8 @@ document.getElementById('check-button').addEventListener('click', () => {
         const verification = merkleTree.verify(proof, hashedAddress, rootHash);
 
         if (verification)
-            document.getElementById('result').innerText = "Address is eligible!"
+            alert("Address is eligible!")
     } else {
-        document.getElementById('result').innerText = "Address is rather not in the eligible list or the input is empty!";
+        alert("Address is rather not in the eligible list or the input is empty!");
     }
 });
