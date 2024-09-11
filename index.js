@@ -28,7 +28,9 @@ document.getElementById('check-button').addEventListener('click', () => {
 
         if (verification)
             alert("Address is eligible!")
+        document.getElementById('result').innerText = "Address is eligible!"
     } else {
         alert("Address is rather not in the eligible list or the input is empty!");
+        document.getElementById('result').innerText = "Address is rather not in the eligible list or the input is empty!";
     }
 });
